@@ -52,6 +52,33 @@ header {
   height:100%;
 }
 
+.none{
+  display:none;
+}
+
+.loading {
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  animation: loading 1s infinite alternate;
+}
+
+.loading img{  
+  width:40px;
+  height:100%;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(460deg);
+  }
+}
+
+
 .search-button:hover{
   transition: 0.5s;
   transform: scale(1.2);

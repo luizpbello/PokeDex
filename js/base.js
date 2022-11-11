@@ -4,6 +4,7 @@ export const elements = {
   pokemonImg: document.getElementById("pokemon-img"),
   btn: document.getElementById("search-button"),
   btn_more:document.getElementById('show-more'),
+  loading:document.getElementById('loading'),
   inputValue: document.getElementById("searchBox"),
   type1: document.getElementById("type1"),
   type2: document.getElementById("type2"),
