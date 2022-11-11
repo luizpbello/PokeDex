@@ -13,9 +13,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap:50px;
   padding: 10px;
   background-color: rgb(211, 211, 211);
   height: 90px;
+}
+
+.header-img{
+  height:90px;
+  width:140px;
+}
+
+.search-container{
+  display:Flex;
+  gap:5px;
 }
 
 @media screen and (max-width: 800px){
@@ -37,14 +48,22 @@ header {
 }
 
 .search-button {
-  padding: 10px;
-  border: none;
-  border-radius: 12px;
-  background-color: blueviolet;
-  color: white;
-  font-weight: 500;
   cursor:pointer;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  
+}
 
+.search-button img{  
+  width:40px;
+  height:100%;
+}
+
+.search-button:hover{
+  transition: 0.5s;
+  transform: scale(1.2);
 }
 
 #show-more{
@@ -80,6 +99,10 @@ header {
   background-color: rgb(231, 231, 231);
   border-radius: 20px;
   transition: 0.5s;
+}
+
+.card-main:hover{
+  transform: scale(1.1)
 }
 
 
@@ -124,8 +147,8 @@ header {
 
 .all-container{
   display:grid;
-  grid-template-columns: 120px 120px 120px;
-  gap:90px;  
+  grid-template-columns: 100px 100px 100px;
+  gap:20px;  
   justify-content: space-around;
 }
 

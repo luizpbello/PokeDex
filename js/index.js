@@ -26,8 +26,8 @@ const showPokemons = async () => {
     await allState.pokemons.getAllPokemons(url);
   } catch (error) {}
 };
-let offset = 0;
 
+let offset = 0;
 async function nextPage() {
   const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`;
 
