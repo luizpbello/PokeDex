@@ -29,15 +29,6 @@ header {
   gap:5px;
 }
 
-@media screen and (max-width: 800px){
-  .search-container{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:7px;
-  }
-}
 
 .searchBox {
   height: 40px;
@@ -152,12 +143,57 @@ header {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .all-container{
+    display:grid;
+    grid-template-columns: 100px 100px;
+    gap:20px;  
+    justify-content: space-around;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap:0;
+  }
+
+   .search-container{
     display:flex;
     flex-direction: column;
-    gap:20px;
+    justify-content: center;
+    align-items: center;
+    gap:7px;
+    padding:10px;
   }
+
+  
+  @media screen and (max-width:400px) {
+    .all-container{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      gap:0;
+    }
+
+    .search-container{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:7px;
+      padding:10px;
+    }
+  
+    
+  }
+ 
   
 }
 
