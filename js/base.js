@@ -12,6 +12,8 @@ export const elements = {
   main_container: document.getElementById('all-pokemons')
 };
 
+export const baseUrl = ''
+
 
 export const clearUI = () => {
     elements.container.innerHTML = "";    
